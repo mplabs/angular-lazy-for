@@ -1,4 +1,4 @@
-import { ViewContainerRef, TemplateRef, DoCheck, IterableDiffers } from '@angular/core';
+import { DoCheck, IterableDiffers, TemplateRef, ViewContainerRef } from "@angular/core";
 export declare class LazyForDirective implements DoCheck {
     private vcr;
     private tpl;
@@ -18,7 +18,7 @@ export declare class LazyForDirective implements DoCheck {
     constructor(vcr: ViewContainerRef, tpl: TemplateRef<any>, iterableDiffers: IterableDiffers);
     ngOnInit(): void;
     ngDoCheck(): void;
-    private update();
-    private onFirstUpdate();
-    private limitToRange(num, min, max);
+    private clamp;
+    private onFirstUpdate;
+    private update;
 }
